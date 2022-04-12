@@ -591,68 +591,73 @@ section .container {
   border: 2px solid #18d26e;
 }
 
-<!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Web Development & design</a></h4>
-            <p>With a sound knowledge in color theory and typography thanks to my photography business, I strive to create webpages that are attractive and easy to navigate.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Responsive HTML</a></h4>
-            <p>I am a detail-oriented person that likes to make sure things work perfectly, and I double-check to make sure all of my responsive links, buttons, and media work properly.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Bootstrap + API Integration</a></h4>
-            <p>Utilizing the latest and greatest Bootstrap functionals and API's is one of my favorite parts about web development. I don't like to re-invent the wheel -- in many cases, it can be a waste of time that could be productively used elsewhere.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Functional JavaScript</a></h4>
-            <p>I like to stay up-to-date on the current industry and diversify platforms and browsers. I am currently learning the React.JS framework.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Aesthetically-pleasing CSS</a></h4>
-            <p>Being a paid photographer, I understand the importance of visually dynamic webpages in regards to marketing.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Attention to Detail</a></h4>
-            <p>As a perfectionist, I prefer to triple-check my code before committing a push on GitHub.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Services Section -->
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.1);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #18d26e;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+.services .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+.services .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.services .icon-box h4 a {
+  color: #fff;
+}
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.services .icon-box:hover {
+  background: #18d26e;
+  border-color: #18d26e;
+}
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+.services .icon-box:hover .icon i {
+  color: #18d26e;
+}
+.services .icon-box:hover .icon::before {
+  background: #35e888;
+}
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Portfolio
